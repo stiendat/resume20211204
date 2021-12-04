@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "WorkSans";
+    src: url("./fonts/Work_Sans/WorkSans-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "WorkSans" !important;
+}
+
+.ava-img {
+    width: 200px;
+    height: 200px;
+    background-image: url("./assets/Untitled.webp");
+    background-position: center;
+    background-size: auto;
+    background-size: 200px 200px;
+    border-radius: 100px;
+}
+
+
+.bg-blue-600 {
+    background-color: #0a58ca;
+}
+
+.content-bg {
+    background-image: url("./assets/19366.jpg");
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-repeat: none;
+}
+
+.content-wrapper {
+    padding-left: 280px;
+}
+
+.main-content{
+    padding: 3rem!important 
+}
+
+.nav-item:hover {
+    background-color: #fff !important;
+}
+
+.nav-item:hover a {
+    color: #212529 !important;
+}
+
+.text-blue-600 {
+    color: #0a58ca;
+}
+
+
+.welcome {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, .75) 100%);
+}
+
+.welcome h1 {
+    font-size: 5rem;
+}
+
+.scrollbar {
+    overflow: overlay;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(189, 189, 189, 0.6);
+}
+
+.sidebar{
+    width: 280px;
+}
+
+@media only screen and (max-width: 1023.9px) {
+    .ava-img{
+        width: 80px;
+        height: 80px;
+        background-size: 80px 80px;
+    }
+    .content-wrapper {
+        padding-left: 120px;
+    }
+    .nav-item a{
+        text-align: center;
+        justify-content: center!important;
+    }
+    .nav-item a span{
+        display: none;
+    }
+    .nav-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-badge{
+        display: none;
+    }
+    .profile-name{
+        display: none;
+    }
+    .profile-link{
+        display: none;
+    }
+    .sidebar{
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .content-wrapper {
+        padding-left: 0;
+    }
+
+    .main-content{
+        padding: 3rem 0 !important;
+    }
+
+    .main-content ul{
+        padding-right: 2rem;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+    .welcome h1{
+        font-size: 3rem!important;
+    }
+    .work-desc{
+        display: block!important;
+    }
+    .work-desc h5{
+        margin-bottom: 1rem!important;
+    }
+    .work-history{
+        padding:0;
+    }
+    .work-history li ul{
+        padding-right: 0!important;
+    }
+}
