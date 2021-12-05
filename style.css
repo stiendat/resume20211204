@@ -9,7 +9,7 @@ body {
 
 .ava-img {
     width: 200px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("./assets/Untitled.webp");
     background-position: center;
     background-size: auto;
@@ -33,8 +33,8 @@ body {
     padding-left: 280px;
 }
 
-.main-content{
-    padding: 3rem!important 
+.main-content {
+    padding: 3rem !important
 }
 
 .nav-item:hover {
@@ -78,42 +78,67 @@ body {
     background-color: rgba(189, 189, 189, 0.6);
 }
 
-.sidebar{
+.sidebar {
     width: 280px;
+    overflow: overlay;
 }
 
+.sidebar::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+
 @media only screen and (max-width: 1023.9px) {
-    .ava-img{
+    .ava-img {
         width: 80px;
-        height: 80px;
+        min-height: 80px;
         background-size: 80px 80px;
     }
+
     .content-wrapper {
         padding-left: 120px;
     }
-    .nav-item a{
+
+    .nav-item a {
         text-align: center;
-        justify-content: center!important;
+        justify-content: center !important;
     }
-    .nav-item a span{
+
+    .nav-item a span {
         display: none;
     }
-    .nav-wrapper{
+
+    .nav-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .profile-badge{
+
+    .profile-badge {
         display: none;
     }
-    .profile-name{
+
+    .profile-name {
         display: none;
     }
-    .profile-link{
+
+    .profile-link {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         width: 120px;
     }
 }
@@ -123,30 +148,35 @@ body {
         padding-left: 0;
     }
 
-    .main-content{
+    .main-content {
         padding: 3rem 0 !important;
     }
 
-    .main-content ul{
+    .main-content ul {
         padding-right: 2rem;
     }
 
     .sidebar {
         display: none !important;
     }
-    .welcome h1{
-        font-size: 3rem!important;
+
+    .welcome h1 {
+        font-size: 3rem !important;
     }
-    .work-desc{
-        display: block!important;
+
+    .work-desc {
+        display: block !important;
     }
-    .work-desc h5{
-        margin-bottom: 1rem!important;
+
+    .work-desc h5 {
+        margin-bottom: 1rem !important;
     }
-    .work-history{
-        padding:0;
+
+    .work-history {
+        padding: 0;
     }
-    .work-history li ul{
-        padding-right: 0!important;
+
+    .work-history li ul {
+        padding-right: 0 !important;
     }
 }
